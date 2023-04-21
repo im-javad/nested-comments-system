@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,10 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => User::factory(),
+            'title' => fake()->title(),
+            'content' => fake()->text(),
+            'img_url' => fake()->image('public/storage/imgs' , 640 , 480 , null , false)
         ];
     }
 }
