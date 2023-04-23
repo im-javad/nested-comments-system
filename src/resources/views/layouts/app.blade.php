@@ -15,6 +15,16 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(0, 0, 182)
+        }
+    </style>
 </head>
 <body>
     <div id="app">
